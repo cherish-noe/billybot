@@ -1,0 +1,9 @@
+apify-client
+chromadb==0.4.22
+google-cloud-aiplatform==1.45.0
+google.generativeai
+langchain_google_vertexai
+langchain==0.1.12
+streamlit
+streamlit-extras
+tqdm
