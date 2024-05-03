@@ -1,4 +1,8 @@
-# BillyBot
+# BillyBot - Your AI Assistant
+
+
+You can check your demo video [here.](https://youtu.be/e5U9rEFco44?si=rddFY35bgMQxadAE)
+
 
 ## Installation 
 
@@ -10,7 +14,7 @@
 (You need to have Google Cloud account and setup a project to use Vertex AI. If you don't, you can go to next step.)
 2.  Get API Key for [Google AI Studio](https://aistudio.google.com/app/apikey). Google AI Studio is more straightforward and easy to use than Vertex AI above. 
 3. Get the API Key token from [Apify](https://apify.com/) for scraping websites. Create an account and get the API key from [here](https://console.apify.com/account/integrations)
-4. Create a .env file and add the credentials and API to it. Check the .env.example for example. Below is the example content inside the .env file. 
+4. Create a .env file and add the credentials and API to it. Check the [.env.example](.env.example) for example. Below is the example content inside the .env file. 
 
 ```bash
 # Gemini
@@ -37,7 +41,8 @@ pip install -r requirements.txt --no-cache-dir
 You can download our sample collection, [chroma_storage.tar.gz](https://github.com/cherish-noe/epsilon/files/15183551/chroma_storage.tar.gz)
 
 ```bash
-wget https://github.com/cherish-noe/epsilon/files/15183551/chroma_storage.tar.gz
+cd billybot
+wget https://github.com/cherish-noe/billybot/releases/download/v0.1/chroma_storage.tar.gz
 ```
 Extract it.
 ```bash
@@ -64,10 +69,12 @@ Docker Installation only supports Google AI Studio based models at the moment.
 docker run -it --rm -p 8511:8511 --name billy-bot billy-bot
 ```
 
-## Tech Stacks
+## Tech Stacks and Architecture
 
 1. Vertex AI
 2. Google AI Studio
 3. Apify
 4. ChromaDB
 5. Streamlit
+
+<img src="img/architecture.png" alt="architecture" style="width: 80%; max-width: 1000px;"/>
