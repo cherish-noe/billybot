@@ -7,7 +7,7 @@ You can check your demo video [here.](https://youtu.be/e5U9rEFco44?si=rddFY35bgM
 
 ## Installation 
 
-### Condo Installation (Recommended)
+### Conda Installation (Recommended)
 
 #### 1. Setup up credentials
 
