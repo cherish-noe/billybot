@@ -27,7 +27,7 @@ LOCATION=us-central1
 APIFY_API_TOKEN=apify_api_xxxxxxxxxxxxxxxxxxxxx
 ```
 
-#### 2. Create Condo environment. 
+#### 2. Create Conda environment. 
 ```bash
 conda create --name billy-bot python=3.10
 ```
