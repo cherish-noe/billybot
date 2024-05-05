@@ -1,8 +1,8 @@
 # BillyBot - Your AI Assistant
 
-Tired of confusing official documentation searches? Our AI assistant, Billy, helps you find the answers you need instantly. Our solution curates your official documentation or any website into a searchable collection. You just need to spend some time for chaning your website into a collection. Ask natural language questions and get the information you need directly - no more endless link clicking.
+Tired of confusing official documentation searches? Our AI assistant, Billy, helps you find the answers you need instantly. Our solution curates your official documentation or any website into a searchable collection. You just need to spend some time for changing your website into a collection. Ask natural language questions and get the information you need directly - no more endless link clicking.
 
-You can check your demo video [here.](https://youtu.be/e5U9rEFco44?si=rddFY35bgMQxadAE)
+You can check the demo video [here.](https://youtu.be/e5U9rEFco44?si=rddFY35bgMQxadAE)
 
 
 ## Installation 
