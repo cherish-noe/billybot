@@ -1,5 +1,6 @@
 import os
 import chromadb
+import pysqlite3
 import streamlit as st
 
 from dotenv import load_dotenv
