@@ -58,12 +58,11 @@ def create_collection(collection_name, input_url, depth):
 
 def main():
 
-    col1, col2, col3 = st.columns([0.4, 0.4, 0.1])
+    col1, col2, col3 = st.columns([0.2, 0.5, 0.2])
 
     with col1:
         # Add logo within the page body
         st.markdown("")
-        st.image("img/billybot.gif")
 
     with col2:
         st.markdown("""
