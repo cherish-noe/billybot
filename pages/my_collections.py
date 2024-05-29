@@ -34,8 +34,7 @@ def get_collections_metadatas(collection_names):
     for collection in collection_names:
         collection = session.chroma_client.get_collection( name=collection, 
                                                     embedding_function=session.llm.embedding_function )
-        results = collection.get( ids = ["0"],
-                                include=[ "metadatas"] )
+        results = collection.get()
         if results['metadatas']:
             collection_urls.append(results['metadatas'][0]['url'])
             if "title" in results['metadatas'][0]:
