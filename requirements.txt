@@ -7,4 +7,4 @@ langchain==0.1.12
 streamlit
 streamlit-extras
 tqdm
-sqlite3>=3.35.0
+pysqlite3

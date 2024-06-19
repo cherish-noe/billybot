@@ -1,4 +1,5 @@
 import os
+import sys
 import chromadb
 import pysqlite3
 import streamlit as st
@@ -8,6 +9,8 @@ from apify_client import ApifyClient
 
 from utils.llm import LLM
 
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 def init_resources():
     load_dotenv()
