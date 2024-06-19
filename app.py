@@ -6,9 +6,6 @@ from utils.ui_components import menu, custom_button
 from utils.resources import init_resources
 from utils.streamlit_utils import set_page_config
 
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Set page_config
 set_page_config(page_title="Home")

@@ -19,4 +19,7 @@ def init_resources():
         st.session_state['apify_client'] = apify_client
     if "chroma_client" not in st.session_state:
         chroma_client = chromadb.PersistentClient( path="chroma_storage" )
+        __import__('pysqlite3')
+        import sys
+        sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
         st.session_state['chroma_client'] = chroma_client
