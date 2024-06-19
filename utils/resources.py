@@ -1,7 +1,5 @@
 import os
-import sys
 import chromadb
-import pysqlite3
 import streamlit as st
 
 from dotenv import load_dotenv
@@ -20,7 +18,5 @@ def init_resources():
         apify_client = ApifyClient(os.getenv("APIFY_API_TOKEN"))
         st.session_state['apify_client'] = apify_client
     if "chroma_client" not in st.session_state:
-        __import__('pysqlite3')
-        sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
         chroma_client = chromadb.PersistentClient( path="chroma_storage" )
         st.session_state['chroma_client'] = chroma_client
